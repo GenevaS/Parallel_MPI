@@ -1,0 +1,16 @@
+process 0: max iterations reached = 0, time elapsed = 0.071971
+
+process 1: max iterations reached = 55, time elapsed = 0.072055
+
+process 2: max iterations reached = 55, time elapsed = 0.071949
+
+process 3: max iterations reached = 55, time elapsed = 0.072100
+
+process 4: max iterations reached = 55, time elapsed = 0.071954
+
+process 5: max iterations reached = 55, time elapsed = 0.072183
+
+process 6: max iterations reached = 55, time elapsed = 0.072029
+
+process 7: max iterations reached = 55, time elapsed = 0.072043
+

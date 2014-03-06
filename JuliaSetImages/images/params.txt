@@ -1,0 +1,5 @@
+mpirun -np 8 ./julia 1 -0.595 0.5 -1.5 1.5 -0.95 0.95 1000 1000 55 image-1.bmp stats-1.txt
+mpirun -np 8 ./julia 1 -0.4 0.6 -0.631862 -0.118138 0.149175 0.519175 1000 1000 2000 image-2.bmp stats-2.txt
+mpirun -np 8 ./julia 1 -.614 0.612 -1.1295 -1.1195 0.4053 0.4189 2000 2000 3000 image-3.bmp stats-3.txt
+mpirun -np 8 ./julia 1 -0.8 0.156 1.103 1.173 -0.330 -0.200 2000 2000 3000 image-4.bmp stats-4.txt
+mpirun -np 8 ./julia 0 0.0016 0.8224 -0.5485 -0.5532 -0.6241 -0.6293 1000 1000 4000 image-5.bmp stats-5.txt
