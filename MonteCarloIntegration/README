@@ -1,0 +1,33 @@
+Programs were developed using the MPICH2 implementation of MPI
+
+Compiled in the Linux terminal using the Makefile
+
+Creates an executable file - MonteCarlo
+
+This program computes the Monte Carlo approximation of a multidimensional
+integral.
+
+MonteCarlo is envoked with: 
+	mpirun -np <#processes> ./MonteCarlo n a1 a2 ... an b1 b2 ... bn N
+	
+	where n is the dimension of the integral, a1 - an are the lower bounds
+	of the integrals, b1 - bn are the upper bounds of the integrals, and
+	N is the number of sample points to be used. The larger the N, the 
+	closer to the exact value the result will be.
+
+main.c - parses arguements to the command line, initializes and closes the
+	     MPI environment, and passses the arguements to the processes.
+
+parallel-monte-carlo.c - Each process runs this function; determines how
+						 many points that process should estimate and
+						 computes the Monte Carlo approximation of an
+						 integral.
+						
+monte-carlo.c - generates random points to be used to compute the 
+				approximation N times and sums the result.
+				
+fcn.c - stores the formula of integral being computed. This function can be
+		altered to compute other integrals.
+		
+check-result.c - a testing function. Put any code used for testing the
+				 program in this file.
