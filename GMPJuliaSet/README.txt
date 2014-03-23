@@ -9,7 +9,8 @@ This program computes the Mandelbrot or Julia set of a complex number and
 generates the associated image as a .bmp file. Statistics about each
 are collected and written to a .txt file.
 
-The file <image.bmp> was created using this program.
+The file <image.bmp> was created using this program with the <params.dat> file. The same parameters
+were given to a program that used <double> variables and produced the file <image-double.bmp>.
 
 The Mandelbrot equation is (z[k+1] = z[k]^s + z[0]), k >= 0
 The Julia equation is (z[k+1] = z[k]^s + c), k >= 0
